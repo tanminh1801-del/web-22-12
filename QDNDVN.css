@@ -1,0 +1,143 @@
+
+/* ---------- RESET ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f6f6f6;
+    line-height: 1.6;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    background-color: #b30000;
+    color: white;
+    height: 180px;
+    text-align: center;
+    padding-top: 20px;
+    border-bottom: 6px solid #7a0000;
+    position: relative;
+}
+
+header .logo {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%; /* logo vẫn tròn */
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    object-fit: cover;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+/* ---------- NAV ---------- */
+nav {
+    background-color: #b30000;
+    padding: 12px 20px;
+    text-align: right;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- NỘI DUNG CHUNG ---------- */
+.container,
+.comment-box,
+.members {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: #fff3e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+}
+
+/* ---------- COMMENT BOX ---------- */
+.comment-box {
+    border: 2px solid #b30000;
+}
+
+.comment-box input,
+.comment-box textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #888;
+}
+
+.comment-box input[type="submit"] {
+    background-color: #b30000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.comment-box input[type="submit"]:hover {
+    background-color: #7a0000;
+}
+
+/* ---------- MEMBERS ---------- */
+.members {
+    border: 2px dashed #b30000;
+}
+
+.members h3 {
+    color: #b30000;
+    font-size: 22px;
+}
+
+.members ul {
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background-color: #b30000;
+    color: #999999;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 17px;
+}
+
+/* ---------- BO GÓC ẢNH ---------- */
+img {
+    border-radius: 15px;   /* bo góc mềm cho tất cả ảnh */
+    object-fit: cover;     /* giữ tỷ lệ ảnh khi bo góc */
+}
+
+/* nếu muốn chỉ ảnh trong container, không ảnh logo */
+.container img,
+.comment-box img,
+.members img {
+    border-radius: 15px;
+}
+@My girl 
